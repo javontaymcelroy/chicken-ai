@@ -1,0 +1,16 @@
+{
+    "menuItems": [
+      {
+        "id": 1,
+        "name": "Spicy Chicken Sandwich",
+        "price": 3.99,
+        "calories": 450,
+        "modifications": [
+          {"id": 1, "name": "No Pickles", "calories": -5},
+          {"id": 2, "name": "Extra Cheese", "price": 0.50, "calories": 100},
+          {"id": 3, "name": "Add Bacon", "price": 1.00, "calories": 75}
+        ]
+      }
+    ]
+  }
+  
