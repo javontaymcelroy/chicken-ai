@@ -1,9 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
   const [inputText, setInputText] = useState("");
   const [messages, setMessages] = useState([]);
+
+  useEffect(() => {
+    const storedMessages = localStorage.getItem("chat_history");
+    if (storedMessages) {
+      setMessages(JSON.parse(storedMessages));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("chat_history", JSON.stringify(messages));
+  }, [messages]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
