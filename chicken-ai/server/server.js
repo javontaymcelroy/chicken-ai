@@ -37,8 +37,8 @@ app.post("/api/chatgpt", async (req, res) => {
       }
     );
 
-    console.log("OpenAI API response:", response.data);
-    console.log("OpenAI API response:", response.data.choices);
+    // console.log("OpenAI API response:", response.data);
+    // console.log("OpenAI API response:", response.data.choices);
 
     res.json(response.data.choices[0].message);
   } catch (error) {
