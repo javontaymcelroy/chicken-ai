@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.post("/api/chatgpt", async (req, res) => {
+const handleRequest = async (req, res) => {
   try {
     const { prompt, temperature, topP, maxLength } = req.body;
     console.log("Received request:", req.body);
@@ -17,8 +17,8 @@ app.post("/api/chatgpt", async (req, res) => {
         model: "gpt-3.5-turbo",
         messages: [
           {
-            role: "system",
-            content: "You are a helpful assistant.",
+            role: "assistant",
+            content: "You are an AI server",
           },
           {
             role: "user",
@@ -37,16 +37,16 @@ app.post("/api/chatgpt", async (req, res) => {
       }
     );
 
-    // console.log("OpenAI API response:", response.data);
-    // console.log("OpenAI API response:", response.data.choices);
-
     res.json(response.data.choices[0].message);
   } catch (error) {
     console.error("Error message:", error.message);
     console.error("Error response data:", error.response?.data);
     res.status(500).json({ message: "Server error" });
   }
-});
+};
+
+app.post("/api/chatgpt", handleRequest);
+app.post("/api/overseer", handleRequest);
 
 const PORT = 3001;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
