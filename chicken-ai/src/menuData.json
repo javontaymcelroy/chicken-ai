@@ -1,16 +1,117 @@
 {
-    "menuItems": [
+  "menu": [
+    {
+      "id": 1,
+      "name": "Spicy Chicken Sandwich",
+      "price": 3.99,
+      "calories": 450,
+      "modifications": [
+        {"id": 1, "name": "No Pickles", "calories": -5},
+        {"id": 2, "name": "Extra Cheese", "price": 0.50, "calories": 100},
+        {"id": 3, "name": "Add Bacon", "price": 1.00, "calories": 75}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Chicken Sandwich",
+      "price": 3.75,
+      "calories": 440,
+      "modifications": [
+        {"id": 1, "name": "No Pickles", "calories": -5},
+        {"id": 2, "name": "Extra Cheese", "price": 0.50, "calories": 100},
+        {"id": 3, "name": "Add Bacon", "price": 1.00, "calories": 75}
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Grilled Chicken Sandwich",
+      "price": 4.49,
+      "calories": 320,
+      "modifications": [
+        {"id": 1, "name": "No Lettuce", "calories": -5},
+        {"id": 2, "name": "Extra Cheese", "price": 0.50, "calories": 100},
+        {"id": 3, "name": "Add Bacon", "price": 1.00, "calories": 75}
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Waffle Potato Fries",
+      "price": 1.99,
+      "calories": 400,
+      "modifications": [
+        {"id": 1, "name": "No Salt", "calories": 0},
+        {"id": 2, "name": "Add Cheese Sauce", "price": 0.50, "calories": 150}
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Nuggets",
+      "price": 4.49,
+      "calories": 260,
+      "modifications": [
+        {"id": 1, "name": "Grilled", "calories": -100},
+        {"id": 2, "name": "Extra Sauce", "price": 0.25, "calories": 50}
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Coca-Cola",
+      "price": 1.69,
+      "calories": 200,
+      "modifications": [
+        {"id": 1, "name": "Diet Coke", "calories": -200},
+        {"id": 2, "name": "Coca-Cola Zero Sugar", "calories": -190}
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Sweet Tea",
+      "price": 1.69,
+      "calories": 90,
+      "modifications": [
+        {"id": 1, "name": "Unsweetened", "calories": -90},
+        {"id": 2, "name": "Sweet Tea", "calories": 160}
+      ]
+      },
       {
-        "id": 1,
-        "name": "Spicy Chicken Sandwich",
-        "price": 3.99,
-        "calories": 450,
-        "modifications": [
-          {"id": 1, "name": "No Pickles", "calories": -5},
-          {"id": 2, "name": "Extra Cheese", "price": 0.50, "calories": 100},
-          {"id": 3, "name": "Add Bacon", "price": 1.00, "calories": 75}
-        ]
+      "id": 8,
+      "name": "Lemonade",
+      "price": 1.99,
+      "calories": 220,
+      "modifications": [
+      {"id": 1, "name": "Diet Lemonade", "calories": -190},
+      {"id": 2, "name": "Strawberry Lemonade", "calories": 50}
+      ]
+      },
+      {
+      "id": 9,
+      "name": "Fruit Cup",
+      "price": 2.79,
+      "calories": 60,
+      "modifications": [
+      {"id": 1, "name": "No Apples", "calories": -20},
+      {"id": 2, "name": "Extra Blueberries", "price": 0.50, "calories": 15}
+      ]
+      },
+      {
+      "id": 10,
+      "name": "Greek Yogurt Parfait",
+      "price": 3.19,
+      "calories": 250,
+      "modifications": [
+      {"id": 1, "name": "No Granola", "calories": -100},
+      {"id": 2, "name": "Add Fruit", "price": 0.50, "calories": 30}
+      ]
+      },
+      {
+      "id": 11,
+      "name": "Side Salad",
+      "price": 3.29,
+      "calories": 160,
+      "modifications": [
+      {"id": 1, "name": "No Cheese", "calories": -50},
+      {"id": 2, "name": "Add Grilled Chicken", "price": 1.50, "calories": 100}
+      ]
       }
-    ]
-  }
-  
+      ]
+      }
